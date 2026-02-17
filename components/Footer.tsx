@@ -9,22 +9,19 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center space-x-4 mb-10">
-              <div className="w-12 h-12 bg-teal-600 rounded-2xl flex items-center justify-center text-white font-black text-2xl shadow-xl shadow-teal-500/20">A</div>
-              <div className="font-black text-2xl text-white tracking-tighter uppercase leading-none">
-                ATS Water <br /> <span className="text-teal-600 text-lg">Technologies</span>
-              </div>
+              <img src="/logo.png" alt="ATS Water Technologies" className="h-20 w-auto object-contain bg-white/10 rounded-xl p-2" />
             </div>
             <p className="text-slate-500 text-sm leading-relaxed mb-10 font-medium">
               Trusted for Water Management Excellence. One of the leading manufacturers of Water Treatment & Commercial Purification Systems in India.
             </p>
             <div className="flex flex-col space-y-4 pt-8 border-t border-white/5">
               <div className="flex items-center space-x-3">
-                 <div className="w-1.5 h-1.5 bg-teal-500 rounded-full animate-pulse"></div>
-                 <span className="text-[10px] font-black uppercase tracking-widest text-slate-200">24/7 Service Support</span>
+                <div className="w-1.5 h-1.5 bg-teal-500 rounded-full animate-pulse"></div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-slate-200">24/7 Service Support</span>
               </div>
               <div className="flex items-center space-x-3">
-                 <div className="w-1.5 h-1.5 bg-teal-500 rounded-full animate-pulse"></div>
-                 <span className="text-[10px] font-black uppercase tracking-widest text-slate-200">Custom Engineering</span>
+                <div className="w-1.5 h-1.5 bg-teal-500 rounded-full animate-pulse"></div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-slate-200">Custom Engineering</span>
               </div>
             </div>
           </div>
@@ -61,8 +58,8 @@ const Footer: React.FC = () => {
               </p>
             </div>
             <div className="p-6 bg-white/5 rounded-3xl border border-white/5 flex flex-col items-center justify-center text-center">
-                 <span className="text-[10px] font-black uppercase text-teal-500 mb-2">ISI Consultancy</span>
-                 <p className="text-[10px] text-slate-400">Complete Turnkey PDW Setup & BIS Liaison</p>
+              <span className="text-[10px] font-black uppercase text-teal-500 mb-2">ISI Consultancy</span>
+              <p className="text-[10px] text-slate-400">Complete Turnkey PDW Setup & BIS Liaison</p>
             </div>
           </div>
 
@@ -70,16 +67,16 @@ const Footer: React.FC = () => {
             <h4 className="text-white font-black mb-10 uppercase tracking-[0.3em] text-[10px]">Accreditation</h4>
             <div className="grid grid-cols-2 gap-4 mb-10">
               <div className="p-6 bg-white/5 rounded-3xl border border-white/5 flex flex-col items-center justify-center">
-                 <ShieldCheck className="w-8 h-8 text-teal-500 mb-2" />
-                 <span className="text-[9px] font-black uppercase text-white">ISO 9001</span>
+                <ShieldCheck className="w-8 h-8 text-teal-500 mb-2" />
+                <span className="text-[9px] font-black uppercase text-white">ISO 9001</span>
               </div>
               <div className="p-6 bg-white/5 rounded-3xl border border-white/5 flex flex-col items-center justify-center">
-                 <Award className="w-8 h-8 text-teal-500 mb-2" />
-                 <span className="text-[9px] font-black uppercase text-white">MSME</span>
+                <Award className="w-8 h-8 text-teal-500 mb-2" />
+                <span className="text-[9px] font-black uppercase text-white">MSME</span>
               </div>
             </div>
             <div className="p-4 bg-teal-500/10 rounded-2xl border border-teal-500/20 text-center">
-               <span className="text-[10px] font-black text-teal-400 uppercase tracking-widest">www.atswater.in</span>
+              <span className="text-[10px] font-black text-teal-400 uppercase tracking-widest">www.atswater.in</span>
             </div>
           </div>
         </div>

@@ -39,7 +39,7 @@ const MagneticButton: React.FC<{ children?: React.ReactNode, className: string }
 const Hero: React.FC = () => {
   return (
     <div className="relative h-screen min-h-[850px] flex items-center overflow-hidden bg-slate-950">
-      <motion.div 
+      <motion.div
         initial={{ scale: 1.1, opacity: 0 }}
         animate={{ scale: 1, opacity: 0.55 }}
         transition={{ duration: 1.5 }}
@@ -53,9 +53,9 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/70 to-transparent"></div>
       </motion.div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full pt-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full pt-32">
         <div className="max-w-5xl">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             className="inline-flex items-center space-x-3 bg-white/5 border border-white/10 px-6 py-2 rounded-full mb-12 backdrop-blur-md shadow-2xl"
@@ -63,8 +63,8 @@ const Hero: React.FC = () => {
             <span className="w-2.5 h-2.5 bg-teal-500 rounded-full animate-pulse shadow-[0_0_15px_rgba(20,184,166,1)]"></span>
             <span className="text-teal-400 text-[10px] font-black uppercase tracking-[0.4em]">Global Engineering Authority</span>
           </motion.div>
-          
-          <motion.h1 
+
+          <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
@@ -74,8 +74,8 @@ const Hero: React.FC = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-teal-400 via-emerald-400 to-blue-500 italic">Management</span> <br />
             Excellence.
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
@@ -83,8 +83,8 @@ const Hero: React.FC = () => {
           >
             Trusted for turnkey excellence in WTP, STP, ZLD, and Packaged MBR solutions from 1m³ to 100m³/hr.
           </motion.p>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
@@ -99,7 +99,7 @@ const Hero: React.FC = () => {
             </MagneticButton>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 1 }}
@@ -120,9 +120,9 @@ const Hero: React.FC = () => {
           </motion.div>
         </div>
       </div>
-      
+
       {/* Scroll Indicator */}
-      <motion.div 
+      <motion.div
         animate={{ y: [0, 15, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-4"

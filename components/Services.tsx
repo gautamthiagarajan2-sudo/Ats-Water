@@ -7,34 +7,34 @@ const Services: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const services = [
-    { 
-      title: 'Erection & Commissioning', 
-      icon: Settings, 
-      desc: 'Expert on-site installation and testing to ensure system integrity from day one.',
+    {
+      title: 'Erection & Commissioning',
+      icon: Settings,
+      desc: 'Expert on-site installation (E&C) and testing to ensure system integrity from day one.',
       image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=1200'
     },
-    { 
-      title: 'Operation & Maintenance', 
-      icon: Wrench, 
-      desc: 'Comprehensive O&M solutions to keep your facility running at peak efficiency 24/7.',
+    {
+      title: 'Operation & Maintenance',
+      icon: Wrench,
+      desc: 'Comprehensive O&M contracts to keep your facility running at peak efficiency 24/7.',
       image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1200'
     },
-    { 
-      title: 'Annual Maintenance (AMC)', 
-      icon: Calendar, 
+    {
+      title: 'Annual Maintenance (AMC)',
+      icon: Calendar,
       desc: 'Predictive and preventive maintenance contracts tailored for industrial continuity.',
       image: 'https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?auto=format&fit=crop&q=80&w=1200'
     },
-    { 
-      title: 'System Revamping', 
-      icon: RefreshCcw, 
-      desc: 'Upgrading legacy water plants with modern molecular filtration technologies.',
+    {
+      title: 'Revamping Work (RW)',
+      icon: RefreshCcw,
+      desc: 'Upgrading and revamping legacy water plants with modern molecular filtration technologies.',
       image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200'
     },
-    { 
-      title: 'Water Testing Services', 
-      icon: FlaskConical, 
-      desc: 'Advanced lab analytics to certify water purity according to global industrial standards.',
+    {
+      title: 'Water Testing Services',
+      icon: FlaskConical,
+      desc: 'Advanced lab analytics (WTS) to certify water purity according to global industrial standards.',
       image: 'https://images.unsplash.com/photo-1581093450021-4a7360e9a6ad?auto=format&fit=crop&q=80&w=1200'
     }
   ];
@@ -43,7 +43,7 @@ const Services: React.FC = () => {
     <div className="max-w-7xl mx-auto px-6 lg:px-12">
       <div className="flex flex-col lg:flex-row gap-24 items-start">
         <div className="lg:w-1/2 sticky top-32">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -85,15 +85,15 @@ const Services: React.FC = () => {
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
               className="relative aspect-[4/5] rounded-[4rem] overflow-hidden shadow-2xl group"
             >
-              <img 
-                src={services[activeIndex].image} 
-                alt={services[activeIndex].title} 
-                className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110" 
+              <img
+                src={services[activeIndex].image}
+                alt={services[activeIndex].title}
+                className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-              
+
               <div className="absolute bottom-16 left-16 right-16">
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
@@ -106,11 +106,11 @@ const Services: React.FC = () => {
               </div>
             </motion.div>
           </AnimatePresence>
-          
+
           <div className="mt-16 flex justify-center space-x-2">
             {services.map((_, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className={`h-1.5 rounded-full transition-all duration-500 ${activeIndex === idx ? 'w-12 bg-teal-500' : 'w-3 bg-slate-200'}`}
               />
             ))}

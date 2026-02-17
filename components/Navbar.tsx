@@ -12,11 +12,12 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
 
   const navLinks = [
     { name: 'Home', id: 'home' },
-    { name: 'About', id: 'about' },
-    { name: 'Systems', id: 'systems' },
+    { name: 'About Us', id: 'about' },
     { name: 'Products', id: 'products' },
-    { name: 'Industries', id: 'industries' },
-    { name: 'Contact', id: 'contact' },
+    { name: 'Systems', id: 'systems' },
+    { name: 'Gallery', id: 'gallery' },
+    { name: 'Brochure', id: 'contact' }, // Linking Brochure to Contact for now as per plan
+    { name: 'Contact Us', id: 'contact' },
   ];
 
   const handleScrollTo = (e: React.MouseEvent, id: string) => {
@@ -31,26 +32,12 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
   return (
     <nav className={`fixed w-full z-[90] transition-all duration-700 ${scrolled ? 'bg-white/90 backdrop-blur-2xl shadow-[0_20px_50px_-20px_rgba(0,0,0,0.1)] py-2' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center">
-        <motion.div 
-          onClick={(e) => handleScrollTo(e, 'home')} 
+        <motion.div
+          onClick={(e) => handleScrollTo(e, 'home')}
           className="flex items-center space-x-3 cursor-pointer group"
           whileHover={{ scale: 1.02 }}
         >
-          <div className="relative w-14 h-14 flex items-center justify-center">
-             <div className="absolute inset-0 bg-teal-600 rounded-full scale-90 group-hover:scale-100 transition-transform duration-500 shadow-xl shadow-teal-500/30"></div>
-             <div className="relative z-10 text-white flex flex-col items-center leading-none">
-                <Droplet className="w-5 h-5 mb-0.5 fill-white" />
-                <span className="text-[10px] font-black tracking-widest">ATS</span>
-             </div>
-          </div>
-          <div className="flex flex-col">
-            <div className={`font-black text-xl tracking-tighter transition-colors duration-500 ${scrolled ? 'text-slate-900' : 'text-white'}`}>
-              ATS WATER <span className="text-teal-500 font-light">TECHNOLOGIES</span>
-            </div>
-            <div className={`text-[8px] font-black uppercase tracking-[0.3em] transition-opacity duration-500 ${scrolled ? 'text-slate-400 opacity-100' : 'text-white/40 opacity-0'}`}>
-              Management Excellence
-            </div>
-          </div>
+          <img src="/logo.png" alt="ATS Water Technologies" className="h-16 w-auto object-contain" />
         </motion.div>
 
         {/* Desktop Menu */}
@@ -84,7 +71,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
 
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
