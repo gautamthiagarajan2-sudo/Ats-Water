@@ -8,13 +8,13 @@ export default defineConfig(({ mode }) => {
       server: {
         port: 3000,
         host: '0.0.0.0',
-        allowedHosts: ['.emergentagent.com', '.emergentcf.cloud', 'localhost'],
+        allowedHosts: ['.emergentagent.com', '.emergentcf.cloud', 'localhost', '.vercel.app'],
+      },
+      build: {
+        outDir: 'dist',
+        sourcemap: false,
       },
       plugins: [react()],
-      define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-      },
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
